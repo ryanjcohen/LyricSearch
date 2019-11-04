@@ -1,0 +1,31 @@
+<!doctype html>
+<html>  
+<head>   
+  <link rel="stylesheet" href="styles.css">
+  <script src="background.js"></script>
+</head> 
+ <body>    
+ 	<h1>LyricsSearch</h1> 
+
+ 	<p>Find a song using its lyrics:</p>
+ 	<form id="searchform">
+ 		<input id= "searchbar" type="text" placeholder = "Enter lyrics here" name="lyrics">
+ 	</form>
+ 	<button id= "searchbtn" type="submit">Search lyrics</button>
+
+	<p id="p1"></p>
+
+	<script>
+		document.getElementById("p1").onclick=function()
+			{myFunction()};
+
+		function myFunction(){
+			document.getElementById("p1").innerHTML= "YES!";
+		}
+	</script>
+
+ 	
+
+ 	
+ </body>
+ </html>

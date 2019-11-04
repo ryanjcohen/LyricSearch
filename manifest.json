@@ -1,0 +1,15 @@
+  {
+    "name": "LyricSearch",
+    "version": "1.0",
+    "description": "Chrome extension for searching songs by their lyrics",
+    "manifest_version": 2,
+    "icons": {
+    	"128": "Logo.png"
+	},
+	"background":{
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"permissions": ["storage"],
+	"browser_action": {"default_popup": "popup.html"}
+  }

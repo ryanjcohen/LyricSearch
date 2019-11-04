@@ -1,0 +1,30 @@
+body{
+	background-color:black;
+	font-family: Arial;
+}
+
+p{
+	color: gray;
+}
+
+h1{
+	color: #F0FF00;
+}
+
+form input{
+	width:85%;
+	text-align: center;
+	margin-left:5%;
+}
+
+div {
+    text-align: center;
+}
+
+button{
+	width:89%;
+	margin-left:5%;
+	cursor: pointer;
+	background-color: #F0FF00;
+	color: black;
+}
