@@ -28,3 +28,39 @@ button{
 	background-color: #F0FF00;
 	color: black;
 }
+
+ol{
+	list-style-type: none;
+	text-align: center;
+	padding-left:0; 
+	list-style-position:inside;
+}
+
+li{
+	padding-bottom: 15px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.song{
+	font-size: 12px;
+}
+
+.artist{
+	font-size: 11px;
+	color: silver;
+}
+
+.userlink{
+	color: lightblue;
+	font-size: 10px;
+}
+
+.hyperlink{
+	text-align: center;
+	vertical-align: auto;
+}
