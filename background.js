@@ -23,7 +23,7 @@ function search_url(){
 	user_link = user_link+words[0];
 	for(i = 1; i<words.length; i++){
 		site = site + '%20' + words[i];
-		user_link = user_link + words[i];
+		user_link = user_link + '%20' + words[i];
 	}
 
 	const proxyurl = "https://cors-anywhere.herokuapp.com/" + site;
