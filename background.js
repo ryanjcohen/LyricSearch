@@ -33,10 +33,10 @@ function search_url(){
   		dataType: "json",
 		success: function(data){
 			console.log(data);
-			console.log(data.response.hits[0].result.title);
-			console.log(data.response.hits[0].result.header_image_thumbnail_url);
-			console.log(data.response.hits[0].result.primary_artist.name);
-			console.log(data.response.hits.length);
+			//console.log(data.response.hits[0].result.title);
+			//console.log(data.response.hits[0].result.header_image_thumbnail_url);
+			//console.log(data.response.hits[0].result.primary_artist.name);
+			//console.log(data.response.hits.length);
 
 			var i = 0;
 
@@ -70,6 +70,13 @@ function search_url(){
 				i++;
 			}
 
+			if(data.response.hits.length === 0){
+				var node = document.createElement("li");
+				node.id = "empty";
+				node.innerHTML = "No results."
+				document.getElementById("results").appendChild(node);
+			}
+
 		},
 		error: function(e){
 			console.log("Error " + JSON.stringify(e));
@@ -77,7 +84,7 @@ function search_url(){
 	});
 
 	document.getElementById("userlink").href = user_link;
-	document.getElementById("userlink").innerHTML = "More results";
+	document.getElementById("userlink").innerHTML = "Full search";
 
 }
 
