@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("searchbtn").addEventListener("click", search_url);
 });
@@ -8,6 +7,8 @@ var site;
 var user_link;
 
 function search_url(){
+
+	//clear previous results
 	document.getElementById("results").innerHTML = "";
 
 	text = document.getElementById("searchbar").value;
@@ -31,6 +32,7 @@ function search_url(){
 		method: 'GET',
 		url: proxyurl,
   		dataType: "json",
+  		headers: {"x-requested-with": "XMLHttpRequest"},
 		success: function(data){
 			console.log(data);
 			//console.log(data.response.hits[0].result.title);
