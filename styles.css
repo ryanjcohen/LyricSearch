@@ -11,7 +11,7 @@ h1{
 	color: #F0FF00;
 }
 
-form input{
+input{
 	width:85%;
 	text-align: center;
 	margin-left:5%;
@@ -63,5 +63,5 @@ li{
 
 .hyperlink{
 	text-align: center;
-	vertical-align: auto;
+	vertical-align: center;
 }
