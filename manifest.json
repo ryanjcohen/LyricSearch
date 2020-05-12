@@ -1,22 +1,21 @@
-  {
+   {
     "name": "LyricSearch",
-    "version": "1.0",
+    "version": "0.1",
     "description": "Chrome extension for searching songs by their lyrics",
     "manifest_version": 2,
     "icons": {
-    	"128": "Logo.png"
-	},
-	"background":{
-		"scripts": ["background.js"],
-		"persistent": false
-	},
-	"permissions": ["storage", "https://api.genius.com", "<all_urls>"],
-	"browser_action": {"default_popup": "popup.html"},
-	"content_scripts": [ 
-        { 
-            "js": [ "jquery.min.js", "background.js" ],
-             "matches": [ "https://api.genius.com/*"],
-         }
-     ],
-	"content_security_policy": "script-src 'self' https://api.genius.com; 'unsafe-eval'; object-src 'self'",
-  }
+      "128": "Logo.png"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+      "js": ["jquery.min.js", "background.js"],
+      "matches": ["https://api.genius.com/*"]
+    }],
+    "content_security_policy": "script-src 'self' https://api.genius.com; 'unsafe-eval'; object-src 'self'"
+   }
